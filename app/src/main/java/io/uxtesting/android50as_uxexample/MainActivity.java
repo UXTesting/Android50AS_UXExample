@@ -54,4 +54,11 @@ public class MainActivity extends ActionBarActivity {
         super.onActivityResult(requestCode, resultCode, data);
         UXTesting.onActivityResult(requestCode, resultCode, data);
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults)  {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        UXTesting.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
 }
