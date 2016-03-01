@@ -3,6 +3,7 @@ package io.uxtesting.android50as_uxexample;
 import android.app.Application;
 
 import io.uxtesting.UXTesting;
+import io.uxtesting.UploadMode;
 
 public class CustomApplication extends Application {
 
@@ -11,6 +12,7 @@ public class CustomApplication extends Application {
         super.onCreate();
 
         UXTesting.Init(this, "MY_APP_KEY");
+        UXTesting.setAutoUploadMode(UploadMode.AUTO);
     }
 
 }
